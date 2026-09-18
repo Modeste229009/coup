@@ -955,3 +955,37 @@ button {
         height: 54px
     }
 }
+/* Correction débordement Résultats */
+#resultats {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#resultats * {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+#resultats img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #resultats {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #resultats img {
+        width: 100%;
+        height: auto;
+    }
+}
